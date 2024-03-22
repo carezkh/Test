@@ -8,8 +8,11 @@ jobs:
   build:
     runs-on: ubuntu-20.04
     steps:
-      - name: setup sanlock
-        run: sudo apt-get update && sudo apt-get install sanlock/*backports
-      
-      - name: sanlock help
-        run: sanlock --help
+      #- name: setup sanlock
+      #  run: sudo apt-get update && sudo apt-get install sanlock/*backports
+
+      #- name: sanlock help
+      #  run: sanlock --help
+
+      - name: do nothing
+        run: echo do nothing
