@@ -28,7 +28,7 @@ jobs:
         with:
           registry: ghcr.io
           username: carezkh
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ secrets.MY_GITHUB_TOKEN }}
 
       - id: echo_tag
         run: echo tag ${{ steps.get_version.outputs.version }}
