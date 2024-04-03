@@ -30,7 +30,7 @@ jobs:
       - id: pwd
         run: pwd
 
-      - id: echo pwd
+      - id: echo_pwd
         run: echo ${{ steps.pwd.outputs }}
 
       - id: build_test
