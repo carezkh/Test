@@ -33,10 +33,15 @@ jobs:
       - id: echo_tag
         run: echo tag ${{ steps.get_version.outputs.version }}
 
+      - id: pwd
+        run: pwd
+
+      - id: echo pwd
+        run: echo ${{ steps.pwd.outputs }}
+
       - id: build_test
         uses: docker/build-push-action@v5
         with:
-          context: .
           file: Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
